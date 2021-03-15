@@ -13,10 +13,7 @@ import com.google.protobuf.ByteString;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author zhaoming <zhaoming@kuaishou.com>
- * Created on 2019-11-07
- */
+
 @Slf4j
 public class SerializeUtils {
 
