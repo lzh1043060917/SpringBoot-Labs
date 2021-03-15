@@ -53,4 +53,15 @@ public class Demo07Producer {
         });
     }
 
+    /*
+    * 使用 kafkaTemplate 提交的 #executeInTransaction(OperationsCallback<K, V, T> callback) 模板方法，
+    * 实现在 Kafka 事务中，执行自定义 KafkaOperations.OperationsCallback 操作。
+    *
+    *
+    * 在 #executeInTransaction(...) 方法的开始，它会自动动创建 Kafka 的事务；然后执行我们定义的 KafkaOperations 的逻辑；
+    * 如果成功，则提交 Kafka 事务；如果失败，则回滚 Kafka 事务
+    *
+    *
+    * */
+
 }
