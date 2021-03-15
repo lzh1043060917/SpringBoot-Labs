@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class UserServiceApplication {
 
     public static void main(String[] args) throws InterruptedException {
-        // 启动 Spring Boot 应用
+        // 启动 Spring Boot 应用 无需手动阻塞线程，防止springboot退出
         SpringApplication.run(UserServiceApplication.class, args);
     }
 
